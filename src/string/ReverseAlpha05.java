@@ -2,7 +2,7 @@ package string;
 
 import java.util.Scanner;
 
-public class ReverseAlpha {
+public class ReverseAlpha05 {
 
     public String solution(String str) {
 
@@ -31,12 +31,12 @@ public class ReverseAlpha {
 
     public static void main(String[] args) {
 
-        ReverseAlpha reverseAlpha = new ReverseAlpha();
+        ReverseAlpha05 reverseAlpha05 = new ReverseAlpha05();
         Scanner scanner = new Scanner(System.in);
 
         String str = scanner.next();
 
-        System.out.println(reverseAlpha.solution(str));
+        System.out.println(reverseAlpha05.solution(str));
     }
 
 }

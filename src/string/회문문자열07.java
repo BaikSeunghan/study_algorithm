@@ -2,7 +2,7 @@ package string;
 
 import java.util.Scanner;
 
-public class 회문문자열 {
+public class 회문문자열07 {
 
     // 앞에서 읽을 때나 뒤에서 읽을 때나 같은 문자열을 회문 문자열이라고 합니다.
     // 문자열이 입력되면 해당 문자열이 회문 문자열이면 "YES", 회문 문자열이 아니면 “NO"를 출력하는 프로그램을 작성하세요.
@@ -39,7 +39,7 @@ public class 회문문자열 {
 
     public static void main(String[] args) {
 
-        회문문자열 ex = new 회문문자열();
+        회문문자열07 ex = new 회문문자열07();
         Scanner scanner = new Scanner(System.in);
 
         String str = scanner.next();

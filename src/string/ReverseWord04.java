@@ -3,7 +3,7 @@ package string;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ReverseWord {
+public class ReverseWord04 {
 
     public ArrayList<String> solutionV1(int n, String[] str) {
 
@@ -40,7 +40,7 @@ public class ReverseWord {
 
     public static void main(String[] args) {
 
-        ReverseWord reverseWord = new ReverseWord();
+        ReverseWord04 reverseWord04 = new ReverseWord04();
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();
@@ -49,10 +49,10 @@ public class ReverseWord {
             str[i] = scanner.next();
         }
 
-        for (String s : reverseWord.solutionV1(n, str)) {
+        for (String s : reverseWord04.solutionV1(n, str)) {
             System.out.println(s);
         }
-        for (String s : reverseWord.solutionV2(n, str)) {
+        for (String s : reverseWord04.solutionV2(n, str)) {
             System.out.println(s);
         }
 

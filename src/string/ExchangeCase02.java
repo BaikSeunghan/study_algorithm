@@ -2,7 +2,7 @@ package string;
 
 import java.util.Scanner;
 
-public class ExchangeCase {
+public class ExchangeCase02 {
 
     public String solution(String str) {
 
@@ -20,11 +20,11 @@ public class ExchangeCase {
 
     public static void main(String[] args) {
 
-        ExchangeCase exchangeCase = new ExchangeCase();
+        ExchangeCase02 exchangeCase02 = new ExchangeCase02();
         Scanner scanner = new Scanner(System.in);
 
         String str = scanner.next();
 
-        System.out.println(exchangeCase.solution(str));
+        System.out.println(exchangeCase02.solution(str));
     }
 }

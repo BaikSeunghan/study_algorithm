@@ -2,7 +2,7 @@ package string;
 
 import java.util.Scanner;
 
-public class FindChar {
+public class FindChar01 {
 
     public int solution(String str, char c) {
         int answer = 0;
@@ -17,12 +17,12 @@ public class FindChar {
 
     public static void main(String[] args) {
 
-        FindChar findChar = new FindChar();
+        FindChar01 findChar01 = new FindChar01();
         Scanner scanner = new Scanner(System.in);
 
         String str = scanner.next();
         char c = scanner.next().charAt(0);
 
-        System.out.println(findChar.solution(str, c));
+        System.out.println(findChar01.solution(str, c));
     }
 }

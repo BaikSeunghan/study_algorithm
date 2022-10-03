@@ -2,7 +2,7 @@ package string;
 
 import java.util.Scanner;
 
-public class DistinctAlpha {
+public class DistinctAlpha06 {
 
     // 소문자로 된 한개의 문자열이 입력되면 중복된 문자를 제거하고 출력하는 프로그램을 작성하세요.
     // 중복이 제거된 문자열의 각 문자는 원래 문자열의 순서를 유지합니다.
@@ -35,12 +35,12 @@ public class DistinctAlpha {
 
     public static void main(String[] args) {
 
-        DistinctAlpha distinctAlpha = new DistinctAlpha();
+        DistinctAlpha06 distinctAlpha06 = new DistinctAlpha06();
         Scanner scanner = new Scanner(System.in);
 
         String str = scanner.next();
 
-        System.out.println(distinctAlpha.solutionV1(str));
-        System.out.println(distinctAlpha.solutionV2(str));
+        System.out.println(distinctAlpha06.solutionV1(str));
+        System.out.println(distinctAlpha06.solutionV2(str));
     }
 }

@@ -2,7 +2,7 @@ package string;
 
 import java.util.Scanner;
 
-public class LongestWord {
+public class LongestWord03 {
 
     public String solutionV1(String str) {
 
@@ -45,12 +45,12 @@ public class LongestWord {
 
     public static void main(String[] args) {
 
-        LongestWord longestWord = new LongestWord();
+        LongestWord03 longestWord03 = new LongestWord03();
         Scanner scanner = new Scanner(System.in);
 
         String str = scanner.nextLine();
 
-        System.out.println(longestWord.solutionV1(str));
-        System.out.println(longestWord.solutionV2(str));
+        System.out.println(longestWord03.solutionV1(str));
+        System.out.println(longestWord03.solutionV2(str));
     }
 }
