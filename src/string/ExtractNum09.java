@@ -8,6 +8,7 @@ public class ExtractNum09 {
     // 만약 “tge0a1h205er”에서 숫자만 추출하면 0, 1, 2, 0, 5이고 이것을 자연수를 만들면 1205이 됩니다.
     // 추출하여 만들어지는 자연수는 100,000,000을 넘지 않습니다.
 
+    // 내 문제풀이 - 정답
     public int solutionV1(String str) {
 
         int answer = 0;
