@@ -21,6 +21,19 @@ public class 피보나치수열04 {
         return answer;
     }
 
+    // 배열쓰지말아라 버젼
+    public void solutionV2(int n) {
+
+        int a = 1, b = 1, c = 0;
+        System.out.print(a + " " + b + " ");
+        for (int i = 1; i < n -1; i++) {
+            c = a + b;
+            System.out.print(c + " ");
+            a = b;
+            b = c;
+        }
+    }
+
     public static void main(String[] args) {
 
         피보나치수열04 ex = new 피보나치수열04();
@@ -28,8 +41,9 @@ public class 피보나치수열04 {
 
         int n = scanner.nextInt();
 
-        for (Integer x : ex.solutionV1(n)) {
-            System.out.print(x + " ");
-        };
+//        for (Integer x : ex.solutionV1(n)) {
+//            System.out.print(x + " ");
+//        };
+        ex.solutionV2(n);
     }
 }

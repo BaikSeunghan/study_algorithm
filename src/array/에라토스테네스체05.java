@@ -1,32 +1,35 @@
 package array;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class 에라토스테네스체05 {
 
-    public List<Integer> solutionV1(int n) {
+    // 다시 풀어볼 것
+    public int solutionV1(int n) {
 
-        List<Integer> answer = new ArrayList<>();
-        answer.add(1);
-        answer.add(1);
+        int answer = 0;
+        int[] arr = new int[n + 1];
+        // ----------------------
+        for (int i = 2; i <= n; i++) {
 
-        for (int i = 1; i < n -1; i++) {
-            answer.add(answer.get(i) + answer.get(i-1));
+            if (arr[i] == 0) {
+                answer++;
+                // 여기가 중요
+                for (int j = i; j <= n; j = j + i) {
+                    arr[j] = 1;
+                }
+            }
         }
         return answer;
     }
 
     public static void main(String[] args) {
 
-        피보나치수열04 ex = new 피보나치수열04();
+        에라토스테네스체05 ex = new 에라토스테네스체05();
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();
 
-        for (Integer x : ex.solutionV1(n)) {
-            System.out.print(x + " ");
-        };
+        System.out.println(ex.solutionV1(n));
     }
 }
