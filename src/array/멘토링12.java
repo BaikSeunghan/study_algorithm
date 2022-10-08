@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class 멘토링12 {
 
-    // 처음으로 들어도 어렵네
+    // 틀림 - 처음으로 들어도 어렵네
     public int solutionV1(int n, int m, int[][] arr) {
 
         // (i,j) 짝
@@ -21,10 +21,10 @@ public class 멘토링12 {
 
                     int pi = 0, pj = 0;
                     for (int s = 0; s < n; s++) {
-                        if(arr[k][s] == i) pi = s;
-                        if(arr[k][s] == j) pj = s;
+                        if (arr[k][s] == i) pi = s;
+                        if (arr[k][s] == j) pj = s;
                     }
-                    if(pi<pj) cnt++;
+                    if (pi < pj) cnt++;
                 }
                 if (cnt == m) {
                     answer++;

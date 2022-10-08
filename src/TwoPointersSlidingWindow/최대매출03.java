@@ -31,7 +31,7 @@ public class 최대매출03 {
         return answer;
     }
 
-    // 강의 방법
+    // 강의 방법 - 첫 값을 구한다음, 다음 숫자를 더하고, 첫번째 숫자를 빼면서 앞으로 나간다.
     private int solutionV2(int n, int m, int[] arr1) {
 
         int answer = 0;
