@@ -9,7 +9,7 @@ public class 올바른괄호01 {
     // (())() 이것은 괄호의 쌍이 올바르게 위치하는 거지만, (()()))은 올바른 괄호가 아니다.
 
     // 다시풀어^^
-    // 강의 - ( 넣고 ) 빼고, 두 가지 남은경우 리턴 NO
+    // 강의 - '('는 넣고, ')' 빼고, 두 가지 남은경우 리턴 NO
     public String solutionV2(String string) {
         String answer = "YES";
 
