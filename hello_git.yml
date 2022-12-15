@@ -4,15 +4,3 @@
     - name: Hello Message
       debug:
         msg: "Hello Seunghan!"
-
-- name: touch files test
-  tasks:
-     - name: make directory
-        file:
-           path: /home/deploy/touch_files
-           state: directory
-           
-     - name: touch file
-        file:
-           path: /home/deploy/touch_files/test.txt
-           state: touch
