@@ -4,3 +4,7 @@
     - name: Hello Message
       debug:
         msg: "Hello Seunghan!"
+
+- name: SCM Git Sample
+  touch:
+    - name: b.abc
