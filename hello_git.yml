@@ -5,6 +5,14 @@
       debug:
         msg: "Hello Seunghan!"
 
-- name: SCM Git Sample
-  touch:
-    - name: b.abc
+- name: touch files test
+  tasks:
+     - name: make directory
+        file:
+           path: /home/deploy/touch_files
+           state: directory
+           
+     - name: touch file
+        file:
+           path: /home/deploy/touch_files/test.txt
+           state: touch
