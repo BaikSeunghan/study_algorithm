@@ -1,5 +1,6 @@
 - name: touch files test
   hosts: all
+  become: true
   tasks:
     - file:
         path: /home/touch_files
