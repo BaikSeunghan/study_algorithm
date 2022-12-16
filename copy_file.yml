@@ -1,4 +1,4 @@
-- name: stat test
+- name: copy file test
   hosts: all
   vars:
     id: copycopy
