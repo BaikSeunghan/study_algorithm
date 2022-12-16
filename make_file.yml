@@ -1,12 +1,12 @@
 - name: touch files test
   hosts: all
   tasks:
-    - name: make directory
+    - 
       file:
         path: /home/touch_files
         state: directory
            
-    - name: touch file
+    - 
       file:
         path: /home/touch_files/test.txt
         state: touch
