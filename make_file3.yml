@@ -1,6 +1,6 @@
 - name: touch files test
   hosts: all
-  become: true
+  become_user: root
   tasks:
     - file:
         path: /home/han/touch_files
