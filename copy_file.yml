@@ -1,0 +1,17 @@
+- name: stat test
+  hosts: all
+  vars:
+    id: copycopy
+  become_user: root
+  tasks:
+    - file:
+        path: /home/han/touch_files
+        state: directory
+               
+    - file:
+        path: /home/han/touch_files/{{item}}.txt
+        state: touch
+      with_items:
+        - "{{id}}1"
+        - "{{id}}2"
+        - "{{id}}3"
