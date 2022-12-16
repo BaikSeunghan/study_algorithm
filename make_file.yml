@@ -1,12 +1,10 @@
 - name: touch files test
   hosts: all
   tasks:
-    - 
-      file:
+    - file:
         path: /home/touch_files
         state: directory
            
-    - 
-      file:
+    - file:
         path: /home/touch_files/test.txt
         state: touch
