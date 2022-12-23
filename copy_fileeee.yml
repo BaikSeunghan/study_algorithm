@@ -1,5 +1,5 @@
 - name: copy file test
-  hosts: all
+  hosts: sdmfmd
   vars:
     id: copycopy
   become_user: root
