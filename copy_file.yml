@@ -5,11 +5,11 @@
   become_user: root
   tasks:
     - file:
-        path: /home/han/touch_files
+        path: /home/han/touch_files2
         state: directory
                
     - file:
-        path: /home/han/touch_files/{{item}}.txt
+        path: /home/han/touch_files2/{{item}}.txt
         state: touch
       with_items:
         - "{{id}}1"
