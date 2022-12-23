@@ -1,5 +1,5 @@
 - name: copy file test
-  hosts: 리눅스 서버 IP
+  hosts: all
   vars:
     id: copycopy
   become_user: root
