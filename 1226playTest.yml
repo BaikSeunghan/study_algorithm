@@ -1,5 +1,5 @@
 - name: copy file test
-  hosts: all
+  hosts: myhost
   become_user: root
   tasks:
     - shell:
