@@ -1,0 +1,7 @@
+- name: copy file test
+  hosts: all
+  become_user: root
+  tasks:
+    - shell:
+        cmd: curl -s https://console.mvp-dev.sdscloud.com/monitoring/agent/v1/manual/agents/1/prepare | sudo -E bash
+        chdir: ~/         
